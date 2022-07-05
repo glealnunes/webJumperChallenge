@@ -1,0 +1,136 @@
+<body>
+  <header id="header-dark">
+    <nav id="header-dark-text">
+      <a [routerLink]="['/home']">Acesse sua Conta</a> ou
+      <a [routerLink]="['/home']">Cadastra-se</a>
+    </nav>
+  </header>
+  <header id="header-search">
+    <nav>
+      <article>
+        <img src="assets/webjumpLogo.png" alt="Logo da WebJumbp" />
+      </article>
+      <aside id="container-search">
+        <button mat-button><mat-icon>shopping_cart</mat-icon></button>
+        <mat-form-field id="search" appearance="outline">
+          <input matInput placeholder="Pesquisar" />
+        </mat-form-field>
+        <button mat-button>BUSCAR</button>
+      </aside>
+    </nav>
+  </header>
+  <header id="header-menu">
+    <nav>
+      <aside>
+        <button mat-button><mat-icon>menu</mat-icon></button>
+        <ul class="nav-list">
+          <a mat-button [routerLink]="['/home']"><li>Página Inicial</li></a>
+          <a mat-button [routerLink]="['/camisetas']"><li>Camisetas</li></a>
+          <a mat-button [routerLink]="['/calcas']"><li>Calças</li></a>
+          <a mat-button [routerLink]="['/sapatos']"><li>Sapatos</li></a>
+          <a mat-button [routerLink]="['/home']"><li>Contato</li></a>
+        </ul>
+      </aside>
+    </nav>
+  </header>
+  <main id="body-container">
+    <section>
+      <h4>Página inicial > Sapatos</h4>
+    </section>
+    <section id="body-container-conteudo">
+      <nav id="container-filter">
+        <aside>
+          <h3>Filtre por</h3>
+          <h4>Categorias</h4>
+          <ul>
+            <a mat-button><li>Roupas</li></a>
+            <a mat-button><li>Sapatos</li></a>
+            <a mat-button><li>Acessórios</li></a>
+          </ul>
+        </aside>
+        <aside id="cores">
+          <h4>Cores</h4>
+          <ul>
+            <a><div id="vermelho"></div></a>
+            <a
+              ><div id="laranja"><a></a></div
+            ></a>
+            <a
+              ><div id="azul"><a></a></div
+            ></a>
+          </ul>
+        </aside>
+        <aside>
+          <h4>Tipo</h4>
+          <ul>
+            <a mat-button><li>Corrida</li></a>
+            <a mat-button><li>Caminhada</li></a>
+            <a mat-button><li>Casual</li></a>
+            <a mat-button><li>Social</li></a>
+          </ul>
+        </aside>
+      </nav>
+      <div id="store">
+        <aside id="store-titulo">
+          <h2>Calças</h2>
+        </aside>
+        <aside id="store-menu">
+          <div id="store-menu-icone">
+            <button mat-button><mat-icon>grid_view</mat-icon></button>
+            <button mat-button><mat-icon>list</mat-icon></button>
+          </div>
+          <div id="store-menu-sheach">
+            <h6>Ordernar por</h6>
+            <mat-form-field appearance="fill">
+              <select matNativeControl>
+                <option value="preco">Preço</option>
+                <option value="preco">Alfabeto</option>
+              </select>
+            </mat-form-field>
+          </div>
+        </aside>
+        <div id="produtos">
+          <article>
+            <img src="assets/media/pants-1.jpg" alt="Camisa branca" />
+            <h4>calça Preta</h4>
+            <h5>R$299,90</h5>
+            <button mat-button>Comprar</button>
+          </article>
+          <article>
+            <img src="assets/media/pants-2.jpg" alt="Camisa branca" />
+            <h4>calça vermelho</h4>
+            <h5>R$299,90</h5>
+            <button mat-button>Comprar</button>
+          </article>
+          <article>
+            <img src="assets/media/pants-3.jpg" alt="Camisa branca" />
+            <h4>calça laranja</h4>
+            <h5>R$299,90</h5>
+            <button mat-button>Comprar</button>
+          </article>
+          <article>
+            <img src="assets/media/pants-4.jpg" alt="Camisa branca" />
+            <h4>calça Branca</h4>
+            <h5>R$299,90</h5>
+            <button mat-button>Comprar</button>
+          </article>
+          <article>
+            <img src="assets/media/pants-2.jpg" alt="Camisa branca" />
+            <h4>calça vermelho</h4>
+            <h5>R$299,90</h5>
+            <button mat-button>Comprar</button>
+          </article>
+          <article>
+            <img src="assets/media/pants-1.jpg" alt="Camisa branca" />
+            <h4>calça preta</h4>
+            <h5>R$299,90</h5>
+            <button mat-button>Comprar</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</body>

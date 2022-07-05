@@ -1,0 +1,80 @@
+<body>
+  <header id="header-dark">
+    <nav id="header-dark-text">
+      <a [routerLink]="['/home']">Acesse sua Conta</a> ou
+      <a [routerLink]="['/home']">Cadastra-se</a>
+    </nav>
+  </header>
+  <header id="header-search">
+    <nav>
+      <article>
+        <img src="assets/webjumpLogo.png" alt="Logo da WebJumbp" />
+      </article>
+      <aside id="container-search">
+        <mat-form-field id="search" appearance="outline">
+          <input matInput placeholder="Pesquisar" />
+        </mat-form-field>
+        <button mat-button id="button-search">BUSCAR</button>
+      </aside>
+    </nav>
+  </header>
+  <header id="header-menu">
+    <nav>
+      <aside>
+        <button  mat-button><mat-icon>menu</mat-icon></button>
+        <ul class="nav-list">
+          <a mat-button [routerLink]="['/home']"><li>Página Inicial</li></a>
+          <a mat-button [routerLink]="['/camisetas']"><li>Camisetas</li></a>
+          <a mat-button [routerLink]="['/calcas']"><li>Calças</li></a>
+          <a mat-button [routerLink]="['/sapatos']"><li>Sapatos</li></a>
+          <a mat-button [routerLink]="['/home']"><li>Contato</li></a>
+        </ul>
+      </aside>
+    </nav>
+  </header>
+  <main id="home">
+    <section id="home-container">
+        <nav >
+          <aside>
+            <button  mat-button><mat-icon>menu</mat-icon></button>
+            <ul>
+              <a mat-button [routerLink]="['/home']"><li>Página Inicial</li></a>
+              <a mat-button [routerLink]="['/camisetas']"><li>Camisetas</li></a>
+              <a mat-button [routerLink]="['/calcas']"><li>Calças</li></a>
+              <a mat-button [routerLink]="['/sapatos']"><li>Sapatos</li></a>
+              <a mat-button [routerLink]="['/home']"><li>Contato</li></a>
+            </ul>
+          </aside>
+        </nav>
+      <div>
+        <article>
+          <img src="assets/cardHome.png" alt="Card WebJumbp" />
+        </article>
+        <aside>
+          <h2>Seja bem-vindo!</h2>
+          <h4>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+            aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+            quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem.
+          </h4>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</body>
