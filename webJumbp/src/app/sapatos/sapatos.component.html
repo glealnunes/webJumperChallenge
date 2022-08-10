@@ -1,0 +1,122 @@
+<body>
+  <header id="cabecalho-escuro">
+    <nav id="cabecalho-escuro-texto">
+      <a [routerLink]="['/home']">Acesse sua Conta</a> ou
+      <a [routerLink]="['/home']">Cadastra-se</a>
+    </nav>
+  </header>
+  <header id="cabecalho-pesquisa">
+    <nav>
+      <article>
+        <img src="assets/webjumpLogo.png" alt="Logo da WebJumbp" />
+      </article>
+      <aside id="container-pesquisa">
+        <button id="botao-carrinho" mat-button>
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <div id="procurar">
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="Pesquisar" />
+          </mat-form-field>
+        </div>
+        <button id="botao-buscar" mat-button>Buscar</button>
+      </aside>
+    </nav>
+  </header>
+  <header id="cabecalho-menu">
+    <nav>
+      <aside>
+        <button mat-button><mat-icon>menu</mat-icon></button>
+        <ul>
+          <a mat-button matTooltip="Info about the action" [routerLink]="['/home']"><li>Página Inicial</li></a>
+          <a mat-button [routerLink]="['/camisetas']"><li>Camisetas</li></a>
+          <a mat-button [routerLink]="['/calcas']"><li>Calças</li></a>
+          <a mat-button [routerLink]="['/sapatos']"><li>Sapatos</li></a>
+          <a mat-button [routerLink]="['/home']"><li>Contato</li></a>
+        </ul>
+      </aside>
+    </nav>
+  </header>
+  <main id="corpo-container">
+    <section id="corpo-container-conteudo">
+      <nav>
+        <aside>
+          <h3>Filtre por</h3>
+          <h4>Categorias</h4>
+          <ul>
+            <a mat-button [routerLink]="['/camisetas']"><li>Roupas</li></a>
+            <a mat-button [routerLink]="['/sapatos']"><li>Sapatos</li></a>
+            <a mat-button><li>Acessórios</li></a>
+          </ul>
+        </aside>
+        <aside id="cores">
+          <h4>Cores</h4>
+          <ul>
+            <a><div id="preto"></div></a>
+            <a
+              ><div id="azul"><a></a></div
+            ></a>
+            <a
+              ><div id="rosa"><a></a></div></a
+            ><a
+              ><div id="branco"><a></a></div
+            ></a>
+          </ul>
+        </aside>
+        <aside>
+          <h4>Tipo</h4>
+          <ul>
+            <a mat-button><li>Corrida</li></a>
+            <a mat-button><li>Caminhada</li></a>
+            <a mat-button><li>Casual</li></a>
+            <a mat-button><li>Social</li></a>
+          </ul>
+        </aside>
+      </nav>
+      <div id="loja">
+        <aside id="loja-titulo">
+          <h2>Sapatos</h2>
+        </aside>
+        <aside id="loja-menu">
+          <div id="loja-menu-icone">
+            <button mat-button><mat-icon>grid_view</mat-icon></button>
+            <button mat-button><mat-icon>list</mat-icon></button>
+          </div>
+          <div id="loja-menu-pesquisa">
+            <h6>Ordernar por</h6>
+            <mat-form-field appearance="outline">
+              <select matNativeControl>
+                <option value="preco">Preço</option>
+              </select>
+            </mat-form-field>
+          </div>
+        </aside>
+        <div id="produtos">
+          <div id="produto-item" *ngFor="let item of productList">
+            <article>
+              <img
+                src="http://localhost:8888/{{ item['image'] }}"
+                alt="Camisa branca"
+              />
+              <h4>{{ item["name"] }}</h4>
+              <h5>R${{ item["price"] }}</h5>
+              <button mat-button>Comprar</button>
+            </article>
+          </div>
+          <div id="produto-item" *ngFor="let item of productList">
+            <article>
+              <img
+                src="http://localhost:8888/{{ item['image'] }}"
+                alt="Camisa branca"
+              />
+              <h4>{{ item["name"] }}</h4>
+              <h5>R${{ item["price"] }}</h5>
+              <button mat-button >Comprar</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>

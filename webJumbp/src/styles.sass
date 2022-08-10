@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+$branco: #FFFFFF
+$vermelho: #CB0D1F
+$preto: #000000
+$cinza: #E2DEDC
+$cinza-escuro: #808185
+$laranja: #F26324
+$azul: #27A3A9
+$roxo: #1E2B50
+
+body
+  margin: 0 auto
+  max-width: 1440px
+  font-family: "OpenSans-Regular"
+  font-size: 100%
+  background-color: $branco
+  color: $preto
+  padding: 5px
+
+  @font-face
+    font-family: "OpenSans-Medium"
+    src: url(assets/fonts/OpenSans-Medium.ttf) format("truetype")
+
+    &
+      font-family: "OpenSans-Bold"
+      src: url(assets/fonts/OpenSans-Bold.ttf) format("truetype")
+
+    &
+      font-family: "OpenSans-ExtraBold"
+      src: url(assets/fonts/OpenSans-ExtraBold.ttf) format("truetype")
+
+    &
+      font-family: "OpenSans-Regular"
+      src: url(assets/fonts/OpenSans-Regular.ttf) format("truetype")
+
+*
+  margin: 0
+  padding: 0
+
+  button
+    font-family: "OpenSans-ExtraBold"
+
+
+  footer
+    display: flex
+    width: 100%
+    height: 20%
+    background-color: $vermelho
